@@ -176,6 +176,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    background: var(--bg-light);
 }
 
 .toggle {
@@ -197,6 +198,23 @@ body {
     position: relative;
     color: var(--orange);
     margin: 0 10px;
-    right: 10px;
+    padding-right: 10px;
     z-index: 100;
 }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .content{
+      color: aliceblue;
+      max-width: 1400px;
+  }
