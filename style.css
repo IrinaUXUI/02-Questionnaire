@@ -198,23 +198,55 @@ body {
     position: relative;
     color: var(--orange);
     margin: 0 10px;
+    text-align: center;
     padding-right: 10px;
-    z-index: 100;
+    z-index: 10000;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
+  /*.sticky + .content {
     padding-top: 60px;
   }
 
   .content{
       color: aliceblue;
       max-width: 1400px;
-  }
+  }*/
+
+/* questions*/
+#demography{
+    margin-top: 90px;
+    margin-left: 40px;
+    color: var(--text-primary);
+}
+
+  /* charts */
+.graphBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    min-height: 200px;
+}
+
+.graphBox .box{
+    position: relative;
+    background: var(--bg-light);
+    padding: 20px;
+    width: 100%;
+    border-radius: 16px;
+    color: var(--text-primary);
+    font-family: 'Cormorant Infant', serif;
+}

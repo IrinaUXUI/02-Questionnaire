@@ -8,83 +8,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!--https://ionic.io/ionicons-->
 
 <body>
     <div class="container">
 
         <!-- Navigation -->
-        <div class="navigation" >
+        <div class="navigation">
             <ul>
                 <li>
                     <a href="#">
                         <span class="icon"><img src="logo.png" style="width: 60px;" alt=""></span>
                         <span class="title" style="color: var(--orange); font-weight:700; font-size: 1.75em;">Movie
-                            Friends</span>
+                            Friend</span>
                     </a>
                 </li>
 
                 <li class="hovered">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
-                        </span>
-                        <span class="title">Dashboard</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
+                    <a href="#one">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
-                        <span class="title">Users</span>
+                        <span class="title">Демография</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">                         
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Навици</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                            <ion-icon name="videocam-outline"></ion-icon>
                         </span>
-                        <span class="title">Messages</span>
+                        <span class="title">Филми</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="headset-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
                         </span>
-                        <span class="title">Help</span>
+                        <span class="title">Функционалности</span>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
-                        </span>
-                        <span class="title">Settings</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="lock-open-outline"></ion-icon>
-                        </span>
-                        <span class="title">Password</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="exit-outline"></ion-icon>
-                        </span>
-                        <span class="title">Sign out</span>
-                    </a>
-                </li>
+                
             </ul>
         </div>
 
@@ -97,36 +73,43 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <h2> Въпросник, касаещ потребителко проучване за MovieFriends</h2>
+                <h2 > Анализ на данните от анкетата</h2>
             </div>
 
             <!-- topbar End -->
 
 
-            <div class="content">
-                <h3>Sticky Navigation Example</h3>
-                <p>The navbar will stick to the top when you reach its scroll position.</p>
-                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-              </div>
 
-              
+            <!-- content Start -->
 
+             <!-- Charts  Start -->
+<h1 id="demography">Демография</h1>
+
+             <!-- Var1-->
+             <div class="graphBox">
+                <div class="box">
+                   <canvas id="myChart1" width="200" height="200"></canvas>                   
+                 </div>
+
+                <div class="box">
+                   <canvas id="myChartOpinions1"></canvas> 
+                     </div>
+            </div>
+
+            <!-- Var2-->
+            <div class="graphBox">
+                <div class="box">
+                   <canvas id="myChart2" width="200" height="200"></canvas>                   
+                 </div>
+
+                <div class="box">
+                   <canvas id="myChartOpinions2"></canvas> 
+                     </div>
+            </div>
+            <!-- Charts  End -->
+            <!-- content End -->
 
         </div>
-
-
-
-
-
-
-
-
 
     </div>
 
