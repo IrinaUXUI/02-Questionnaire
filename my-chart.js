@@ -271,9 +271,9 @@ const myChartOpinions3 = new Chart(opinions3, {
 const myChart4 = new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['% с настолен компютър','% с преносим компютър','% с таблет', '% с смартфон','% с нетбук/Ултрабук'],
+        labels: ['Актьорите','Сюжетът','Критиката', 'Продуцентите и режисьорите','Клюките'],
         datasets: [{
-            data: [34.8,30.4,17.4,17.4,0],
+            data: [20,19,4,6,3],
             backgroundColor: [
                 '#FF7300',
                 '#FC49AB',
@@ -304,38 +304,77 @@ const myChart4 = new Chart(ctx4, {
 const myChartOpinions4 = new Chart(opinions4, {
     type: 'bar',
     data: {
-        labels: ['Action', 'Fantasy', 'Drama', 'Horror', 'Mystery'],
+        labels: ['Актьорите', 'Сюжетът', 'Критиката', 'Продуцентите и режисьорите', 'Клюките'],
         datasets: [{
-            label: 'Comments by genre',
-            data: [124855, 162584, 85875, 54561, 48933],
+            label: 'Изобщо не е важна',
+            data: [1, 0, 8, 7, 12],
             backgroundColor: [
                 '#FF7300',
-                '#FC49AB',
+            ],
+            borderColor: [
+                '#FF7300',  
+            ],
+            borderWidth: 1
+        },
+        {
+            label: 'Маловажна',
+            data: [1, 2, 5, 5, 1],
+            backgroundColor: [
+                '#FC49AB', 
+            ],
+            borderColor: [
+                '#FC49AB',  
+            ],
+            borderWidth: 1
+        },
+        {
+            label: 'Нито важна, нито неважна',
+            data: [1, 2, 6, 5, 7],
+            backgroundColor: [
                 '#64FF00',
+            ],
+            borderColor: [
+                '#64FF00',   
+            ],
+            borderWidth: 1
+        },
+         {
+            label: 'Важна',
+            data: [8, 6, 3, 3, 2],
+            backgroundColor: [  
                 '#5FE8FF',
+            ],
+            borderColor: [
+                '#5FE8FF',   
+            ],
+            borderWidth: 1
+        },
+        {
+            label: 'Изключително важна',
+            data: [12,13,1,3,1],
+            backgroundColor: [    
                 '#E7FF00',
             ],
             borderColor: [
-                '#FF7300',
-                '#FC49AB',
-                '#64FF00',
-                '#5FE8FF',
                 '#E7FF00',
             ],
             borderWidth: 1
         }]
+
     },
     options: {
         responsive:true,
 
         scales: {
             y: {
+                stacked: true,
                 ticks:{
                     color:'#D9D9D9' /*changes color of y axis */
                 },
                 beginAtZero: true,               
             },
             x:{
+                stacked: true,
                 ticks:{
                     color:[/*changes color of x axis */                  
                         '#FF7300',
