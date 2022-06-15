@@ -81,6 +81,7 @@ const myChartOpinions1 = new Chart(opinions1, {
     },
     options: {
         responsive:true,
+        
 
         scales: {
             y: {

@@ -134,7 +134,6 @@
                         публикации за различни жанрове/теми.
                 </div>
             </div>
-
             <!-- 05 question-->
             <div class="graphBox">
                 <div class="box">
@@ -311,10 +310,12 @@
         let toggle = document.querySelector('.toggle');
         let navigation = document.querySelector('.navigation');
         let main = document.querySelector('.main');
+        let graph = document.querySelector('.graphBox')
 
         toggle.onclick = function () {
             navigation.classList.toggle('active');
             main.classList.toggle('active');
+            graph.classList.toggle('active');
         }
 
         // sticky topbar

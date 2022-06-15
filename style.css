@@ -254,6 +254,7 @@ body {
     min-height: 200px;
 }
 
+
 .graphBox .box{
     position: relative;
     background: var(--bg-light);
