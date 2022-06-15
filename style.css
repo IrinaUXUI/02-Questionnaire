@@ -256,3 +256,106 @@ body {
     font-family: 'Cormorant Infant', serif;
 }
 
+
+@media (max-width:991px) {
+
+    .graphBox{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .navigation {
+        left: -300px;
+    }
+
+    .navigation.active {
+        width: 300px;
+        left: 0;
+    }
+
+    .main {
+        width: 100%;
+        left: 0;
+    }
+
+    .main.active {
+        left: 300px;
+    }
+
+    .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .toggle{
+        color: var(--orange);
+        z-index: 10001;
+    }
+
+    .main.active .toggle{
+        color: var(--text-primary);
+    }
+}
+
+@media (max-width:768px) {
+    .details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recentMovies {
+        overflow-x: auto;
+    }
+
+    .status.inprogres {
+        white-space: nowrap;
+        /*This removes break in status label*/
+    }
+    .recentUsers table tr td h4{
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width:488px) {
+    .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardHeader h2 {
+        font-size: 1.2em;
+    }
+
+    table thead {
+        font-size: 14px;
+    }
+
+    .recentUsers table tr td h4{
+        margin-top: 20px;
+    }
+
+    .user{
+        min-width: 40px;
+    }
+
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+
+    .toggle{
+        color: var(--orange);
+        z-index: 10001;
+    }
+
+    .main.active .toggle{
+      /*  position: fixed;
+        right: 0;                 NOT WORKING
+        left: initial;*/
+        color: var(--text-primary);
+    }
+}
