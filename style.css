@@ -217,7 +217,6 @@ body {
   /*.sticky + .content {
     padding-top: 60px;
   }
-
   .content{
       color: aliceblue;
       max-width: 1400px;
@@ -226,14 +225,23 @@ body {
 /* questions*/
 #demography,
 #habits,
-#movies{
-    margin-top: 95px;
+#movies,
+#features{
+    margin-top: 75px;
     margin-bottom: 20px;
     position: relative;
    text-align: center;
     color: var(--text-primary);
     font-size: 2.5em;
 }
+
+#habits,
+#movies,
+#features{
+    margin-top: 25px;
+}
+
+
 
   /* charts */
 .graphBox{
