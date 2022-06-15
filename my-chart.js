@@ -10,6 +10,9 @@ const opinions3 = document.getElementById('myChartOpinions3').getContext('2d');
 const ctx4 = document.getElementById('myChart4').getContext('2d');
 const opinions4 = document.getElementById('myChartOpinions4').getContext('2d');
 
+const ctx5 = document.getElementById('myChart5').getContext('2d');
+const opinions5 = document.getElementById('myChartOpinions5').getContext('2d');
+
 /* ROW 1 START*/
 const myChart1 = new Chart(ctx1, {
     type: 'doughnut',
@@ -390,5 +393,9 @@ const myChartOpinions4 = new Chart(opinions4, {
     }
    
 });
-
 /* ROW 4 END*/
+
+
+/* ROW 5 START*/
+
+/* ROW 5 END*/

@@ -225,7 +225,8 @@ body {
 
 /* questions*/
 #demography,
-#habits{
+#habits,
+#movies{
     margin-top: 95px;
     margin-bottom: 20px;
     position: relative;
