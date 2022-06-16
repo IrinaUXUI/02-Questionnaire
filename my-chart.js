@@ -112,7 +112,7 @@ const myChartOpinions1 = new Chart(opinions1, {
 const myChart2 = new Chart(ctx2, {
     type: 'doughnut',
     data: {
-        labels: ['% с настолен компютър','% с преносим компютър','% с таблет', '% с смартфон','% с нетбук/Ултрабук'],
+        labels: ['% с настолен компютър','% с преносим компютър','% със таблет', '% със смартфон','% с нетбук/Ултрабук'],
         datasets: [{
             data: [34.8,30.4,17.4,17.4,0],
             backgroundColor: [
